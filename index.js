@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server , {
     cors:{
-        origin:"http://localhost:3001", 
+        origin:"https://chat-budddies.herokuapp.com/", 
         methods :["get","post"]
     }
 })
@@ -41,7 +41,7 @@ io.on("connection",(socket)=>{
     // })
 })
 
-server.listen("3002",()=>{
+server.listen(()=>{
     console.log("server is running")
 })
 
