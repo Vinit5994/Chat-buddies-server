@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server , {
     cors:{
-        origin:"https://chat-budddies.herokuapp.com/", 
+        origin:"https://chat-buddie.herokuapp.com/", 
         methods :["get","post"]
     }
 })
