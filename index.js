@@ -16,7 +16,7 @@ const io = new Server(server , {
     cors:{
         origin:"https://6349534f8a7a593c8833ffe7--mellow-pithivier-f365d7.netlify.app/", 
         methods :["get","post"],
-      credentials:true,
+      
     }
 })
 io.on("connection",(socket)=>{
